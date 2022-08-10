@@ -6,6 +6,16 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 const port = 3000;
+// Gak bisa pake express nya hadehh
+// next update maybe
+// // deklarasi lagi karena express itu function 
+// app.use(BodyParser.urlencoded({extended : true }));
+// //untuk post form , supaya menangkap hasil input an
+
+// app.set("view engine", "ejs");
+// app.set("views", "views"); /*directory html nya dimana*/
+
+
 // jika server di buka
 app.get('/', (req, res) => {
     // directory yang di perlihatkan
